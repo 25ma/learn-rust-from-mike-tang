@@ -1,5 +1,5 @@
 mod az_layer_one_mod;
-pub mod az_layer_two_mod;
+mod az_layer_two_mod;
 
 
 fn main() {
