@@ -13,7 +13,7 @@ struct Student {
 
 
 impl Student {
-    fn new(username: String, age: u32, sex: bool, class: Option<Class> , lesson: Option<Lesson>,  club: String) -> Student {
+    fn new(username: String, age: u32, sex: bool, class: Option<Class> , lesson: Option<Lesson>,  club: String) -> Self {
         Self {
             name: username,
             age: age,
@@ -31,8 +31,8 @@ impl Student {
     }
 
 
-    fn find(self: &Self)-> Student {
-        Student {
+    fn find(self: &Self)-> Self {
+        Self {
             name: self.name.clone(),
             age: self.age,
             sex: self.sex,
